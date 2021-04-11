@@ -1,0 +1,131 @@
+ul,ol{
+	list-style: none;
+}
+
+.slideshow{
+	width: 100%;
+	height: 180px;
+	position: relative;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+	height: 180px;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	display: none;
+}
+
+.pagination{
+	display: none;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+@media (min-width: 480px){
+	.slideshow{
+		height: 250px;
+	}
+	
+	.slider li img{
+		height: auto;
+	}
+	.slider .caption h2{
+		font-size: 30px;
+	}
+}
+
+
+@media screen and (min-width: 768px){
+	.slider .caption p{
+		display: block;
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	
+	.slideshow{
+		height: 400px;
+	}
+}
+
+@media (min-width: 1024px){
+	.slideshow{
+		height: 500px;
+	}
+	
+	.slider li img{
+		margin-top: -80px;
+	}
+	
+	.pagination{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		z-index: 1000;
+	}
+
+	.pagination li{
+		font-size: 20px;
+		margin: 2px 5px;
+		color: #858585;
+		cursor: pointer;
+	}
+}

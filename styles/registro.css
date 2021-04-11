@@ -1,0 +1,112 @@
+@import url(menu.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(#6495ED,#008);
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    /*background: #333;*/
+    background: #8FA0B1;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    line-height: 50px;
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+main .contenedor{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .contenedor div{
+    width: 98%;
+    margin: 1%;
+}
+
+.TxtForm{
+    width: 100%;
+    border: none;
+    background: #fff;
+    border-bottom: 2px solid #6b6b70;
+    width: 100%;
+    line-height: 30px;
+    transition: all 0.5s;
+    font-family: 'nueva fuente';
+    padding-left: 10px;
+}
+
+.BTNForm {
+  padding: 10px;
+  color: #fff;
+  background-color: red;
+  border-radius: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  transition: all 1s;
+}
+
+
+.colorFormV {
+  background-color: #008800;
+}
+.colorFormR {
+  background-color: #ff0000;
+}
+.colorFormV:hover {
+  background-color: #004100;
+}
+.colorFormR:hover {
+  background-color: #7c0000ad;
+}
+
+
+@media (min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    
+    main .contenedor div{
+    width: 40%;
+    margin: 1%;
+}
+}
+
+
+
+
+@font-face{
+	font-family: 'nueva fuente';
+	src: url(../fuentes/Lora-Regular.ttf);
+}
+
+@font-face{
+	font-family: 'otra fuente';
+	src: url(../fuentes/Oswald-Regular.ttf);
+}
